@@ -1,0 +1,4 @@
+{
+  "shutDownTimeout": 1000,
+  "serverPort": 8345
+}

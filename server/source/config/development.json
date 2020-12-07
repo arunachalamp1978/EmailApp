@@ -1,0 +1,35 @@
+{
+  "shutDownTimeout": 1000,
+  "serverPort": 8345,
+  "delayInMsBetweenEmails": 1000,
+  "maxErrorsPerProvider": 2,
+  "redis":{
+    "host": "127.0.0.1",
+    "port": 6379,
+    "emailJobsQueueName": "email_jobs_queue"
+  },
+  "emailProviders": {
+    "timeoutInMs": 5000,
+    "mailGun": {
+      "providerName": "Mailgun",
+      "protocol":"https://",
+      "url": "api.mailgun.net/v3",
+      "fromAddress": "from@gmail.com",
+      "domain": "a domain",
+      "privateKey": "a private key"
+    },
+    "sendGrid":{
+      "providerName": "Sendgrid",
+      "url": "https://api.sendgrid.com/v3/mail/send",
+      "fromAddress": "from@gmail.com",
+      "apiKey": "a private key"
+    },
+    "mailTrap": {
+      "providerName": "MailTrap",
+      "url": "smtp.mailtrap.io",
+      "fromAddress": "from@gmail.com",
+      "user": "282cb1ed78d36f",
+      "pass": "27683515cc26cb"
+    }
+  }
+}
