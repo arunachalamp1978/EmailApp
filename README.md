@@ -242,11 +242,16 @@ npm install --global --production windows-build-tools
 2. Can enforce Docker to use PM2 for better clustering so that the logical cores in the machine be effectively utilized for better performance and monitoring.
 
 #### Continuous Delivery Pipeline for Amazon ECS Using Jenkins, GitHub, and Amazon ECR
-#####Build an ECS Cluster
-#####Create a Jenkins Server
+Build an ECS Cluster
+
+Create a Jenkins Server
+
 Jenkins is a popular server for implementing continuous integration and continuous delivery pipelines. In this example, you'll use Jenkins to build a Docker image from a Dockerfile, push that image to the Amazon ECR registry that you created earlier, and create a task definition for your container. Finally, you'll deploy and update a service running on your ECS cluster.
-#####Create an ECR Registry
+
+Create an ECR Registry
 Amazon ECR is a private Docker container registry that you'll use to store your container images. For this example, we'll create a repository named hello-world in the us-west-2 (Oregon) region.
-#####Configure Jenkins First Run
-#####Create and import SSH keys for Github
-#####Bridge Git Hub Repo
+
+Configure Jenkins First Run
+
+Create and import SSH keys for Github
+Bridge Git Hub Repo
